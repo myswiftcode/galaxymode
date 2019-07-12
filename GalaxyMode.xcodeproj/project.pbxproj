@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8266B3C22D0C1810064B075 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8266B3B22D0C1810064B075 /* GameManager.swift */; };
+		D834B43D226C28A5006D22D8 /* GameMainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = D834B43C226C28A5006D22D8 /* GameMainMenu.sks */; };
+		D844E44C2263330800EF49AB /* GameMainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D844E44B2263330800EF49AB /* GameMainMenu.swift */; };
+		D84CAD71226226C800BEC554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84CAD70226226C800BEC554 /* AppDelegate.swift */; };
+		D84CAD73226226C800BEC554 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D84CAD72226226C800BEC554 /* GameScene.sks */; };
+		D84CAD75226226C800BEC554 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D84CAD74226226C800BEC554 /* Actions.sks */; };
+		D84CAD77226226C800BEC554 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84CAD76226226C800BEC554 /* GameScene.swift */; };
+		D84CAD79226226C800BEC554 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84CAD78226226C800BEC554 /* GameViewController.swift */; };
+		D84CAD7C226226C800BEC554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84CAD7A226226C800BEC554 /* Main.storyboard */; };
+		D84CAD7E226226C900BEC554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84CAD7D226226C900BEC554 /* Assets.xcassets */; };
+		D84CAD81226226C900BEC554 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84CAD7F226226C900BEC554 /* LaunchScreen.storyboard */; };
+		D84CAD8C226226CA00BEC554 /* GalaxyModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84CAD8B226226CA00BEC554 /* GalaxyModeTests.swift */; };
+		D84CAD97226226CA00BEC554 /* GalaxyModeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84CAD96226226CA00BEC554 /* GalaxyModeUITests.swift */; };
+		D84CADA62262297E00BEC554 /* vzriv.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D84CADA42262297E00BEC554 /* vzriv.mp3 */; };
+		D84CADA72262297E00BEC554 /* bullet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D84CADA52262297E00BEC554 /* bullet.mp3 */; };
+		D84CADAB22622A2700BEC554 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84CADA922622A2700BEC554 /* Assets.xcassets */; };
+		D84E6BE2226252EC009A3A47 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = D84E6BE0226252EC009A3A47 /* Starfield.sks */; };
+		D84E6BE3226252EC009A3A47 /* Vzriv.sks in Resources */ = {isa = PBXBuildFile; fileRef = D84E6BE1226252EC009A3A47 /* Vzriv.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D84CAD88226226CA00BEC554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D84CAD65226226C800BEC554 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D84CAD6C226226C800BEC554;
+			remoteInfo = GalaxyMode;
+		};
+		D84CAD93226226CA00BEC554 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D84CAD65226226C800BEC554 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D84CAD6C226226C800BEC554;
+			remoteInfo = GalaxyMode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8266B3B22D0C1810064B075 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		D834B43C226C28A5006D22D8 /* GameMainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameMainMenu.sks; sourceTree = "<group>"; };
+		D844E44B2263330800EF49AB /* GameMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMainMenu.swift; sourceTree = "<group>"; };
+		D84CAD6D226226C800BEC554 /* GalaxyMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GalaxyMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84CAD70226226C800BEC554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D84CAD72226226C800BEC554 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D84CAD74226226C800BEC554 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		D84CAD76226226C800BEC554 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D84CAD78226226C800BEC554 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D84CAD7B226226C800BEC554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D84CAD7D226226C900BEC554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D84CAD80226226C900BEC554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D84CAD82226226C900BEC554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84CAD87226226CA00BEC554 /* GalaxyModeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalaxyModeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84CAD8B226226CA00BEC554 /* GalaxyModeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyModeTests.swift; sourceTree = "<group>"; };
+		D84CAD8D226226CA00BEC554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84CAD92226226CA00BEC554 /* GalaxyModeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GalaxyModeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84CAD96226226CA00BEC554 /* GalaxyModeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyModeUITests.swift; sourceTree = "<group>"; };
+		D84CAD98226226CA00BEC554 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84CADA42262297E00BEC554 /* vzriv.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vzriv.mp3; sourceTree = "<group>"; };
+		D84CADA52262297E00BEC554 /* bullet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bullet.mp3; sourceTree = "<group>"; };
+		D84CADA922622A2700BEC554 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		D84E6BE0226252EC009A3A47 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
+		D84E6BE1226252EC009A3A47 /* Vzriv.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Vzriv.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D84CAD6A226226C800BEC554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84CAD84226226CA00BEC554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84CAD8F226226CA00BEC554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D84CAD64226226C800BEC554 = {
+			isa = PBXGroup;
+			children = (
+				D84CAD6F226226C800BEC554 /* GalaxyMode */,
+				D84CAD8A226226CA00BEC554 /* GalaxyModeTests */,
+				D84CAD95226226CA00BEC554 /* GalaxyModeUITests */,
+				D84CAD6E226226C800BEC554 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D84CAD6E226226C800BEC554 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D84CAD6D226226C800BEC554 /* GalaxyMode.app */,
+				D84CAD87226226CA00BEC554 /* GalaxyModeTests.xctest */,
+				D84CAD92226226CA00BEC554 /* GalaxyModeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D84CAD6F226226C800BEC554 /* GalaxyMode */ = {
+			isa = PBXGroup;
+			children = (
+				D84E6BE0226252EC009A3A47 /* Starfield.sks */,
+				D84E6BE1226252EC009A3A47 /* Vzriv.sks */,
+				D84CADA922622A2700BEC554 /* Assets.xcassets */,
+				D84CADA52262297E00BEC554 /* bullet.mp3 */,
+				D84CADA42262297E00BEC554 /* vzriv.mp3 */,
+				D84CAD70226226C800BEC554 /* AppDelegate.swift */,
+				D84CAD72226226C800BEC554 /* GameScene.sks */,
+				D834B43C226C28A5006D22D8 /* GameMainMenu.sks */,
+				D84CAD74226226C800BEC554 /* Actions.sks */,
+				D84CAD76226226C800BEC554 /* GameScene.swift */,
+				D844E44B2263330800EF49AB /* GameMainMenu.swift */,
+				D84CAD78226226C800BEC554 /* GameViewController.swift */,
+				D84CAD7A226226C800BEC554 /* Main.storyboard */,
+				D84CAD7D226226C900BEC554 /* Assets.xcassets */,
+				D84CAD7F226226C900BEC554 /* LaunchScreen.storyboard */,
+				D84CAD82226226C900BEC554 /* Info.plist */,
+				D8266B3B22D0C1810064B075 /* GameManager.swift */,
+			);
+			path = GalaxyMode;
+			sourceTree = "<group>";
+		};
+		D84CAD8A226226CA00BEC554 /* GalaxyModeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D84CAD8B226226CA00BEC554 /* GalaxyModeTests.swift */,
+				D84CAD8D226226CA00BEC554 /* Info.plist */,
+			);
+			path = GalaxyModeTests;
+			sourceTree = "<group>";
+		};
+		D84CAD95226226CA00BEC554 /* GalaxyModeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D84CAD96226226CA00BEC554 /* GalaxyModeUITests.swift */,
+				D84CAD98226226CA00BEC554 /* Info.plist */,
+			);
+			path = GalaxyModeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D84CAD6C226226C800BEC554 /* GalaxyMode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84CAD9B226226CA00BEC554 /* Build configuration list for PBXNativeTarget "GalaxyMode" */;
+			buildPhases = (
+				D84CAD69226226C800BEC554 /* Sources */,
+				D84CAD6A226226C800BEC554 /* Frameworks */,
+				D84CAD6B226226C800BEC554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GalaxyMode;
+			productName = GalaxyMode;
+			productReference = D84CAD6D226226C800BEC554 /* GalaxyMode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D84CAD86226226CA00BEC554 /* GalaxyModeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84CAD9E226226CA00BEC554 /* Build configuration list for PBXNativeTarget "GalaxyModeTests" */;
+			buildPhases = (
+				D84CAD83226226CA00BEC554 /* Sources */,
+				D84CAD84226226CA00BEC554 /* Frameworks */,
+				D84CAD85226226CA00BEC554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D84CAD89226226CA00BEC554 /* PBXTargetDependency */,
+			);
+			name = GalaxyModeTests;
+			productName = GalaxyModeTests;
+			productReference = D84CAD87226226CA00BEC554 /* GalaxyModeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D84CAD91226226CA00BEC554 /* GalaxyModeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D84CADA1226226CA00BEC554 /* Build configuration list for PBXNativeTarget "GalaxyModeUITests" */;
+			buildPhases = (
+				D84CAD8E226226CA00BEC554 /* Sources */,
+				D84CAD8F226226CA00BEC554 /* Frameworks */,
+				D84CAD90226226CA00BEC554 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D84CAD94226226CA00BEC554 /* PBXTargetDependency */,
+			);
+			name = GalaxyModeUITests;
+			productName = GalaxyModeUITests;
+			productReference = D84CAD92226226CA00BEC554 /* GalaxyModeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D84CAD65226226C800BEC554 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "v.sergeev.m@icloud.com";
+				TargetAttributes = {
+					D84CAD6C226226C800BEC554 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					D84CAD86226226CA00BEC554 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = D84CAD6C226226C800BEC554;
+					};
+					D84CAD91226226CA00BEC554 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = D84CAD6C226226C800BEC554;
+					};
+				};
+			};
+			buildConfigurationList = D84CAD68226226C800BEC554 /* Build configuration list for PBXProject "GalaxyMode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D84CAD64226226C800BEC554;
+			productRefGroup = D84CAD6E226226C800BEC554 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D84CAD6C226226C800BEC554 /* GalaxyMode */,
+				D84CAD86226226CA00BEC554 /* GalaxyModeTests */,
+				D84CAD91226226CA00BEC554 /* GalaxyModeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D84CAD6B226226C800BEC554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D834B43D226C28A5006D22D8 /* GameMainMenu.sks in Resources */,
+				D84CADA72262297E00BEC554 /* bullet.mp3 in Resources */,
+				D84CADA62262297E00BEC554 /* vzriv.mp3 in Resources */,
+				D84CAD7C226226C800BEC554 /* Main.storyboard in Resources */,
+				D84CAD73226226C800BEC554 /* GameScene.sks in Resources */,
+				D84CAD7E226226C900BEC554 /* Assets.xcassets in Resources */,
+				D84CAD81226226C900BEC554 /* LaunchScreen.storyboard in Resources */,
+				D84E6BE2226252EC009A3A47 /* Starfield.sks in Resources */,
+				D84CAD75226226C800BEC554 /* Actions.sks in Resources */,
+				D84CADAB22622A2700BEC554 /* Assets.xcassets in Resources */,
+				D84E6BE3226252EC009A3A47 /* Vzriv.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84CAD85226226CA00BEC554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84CAD90226226CA00BEC554 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D84CAD69226226C800BEC554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84CAD77226226C800BEC554 /* GameScene.swift in Sources */,
+				D844E44C2263330800EF49AB /* GameMainMenu.swift in Sources */,
+				D84CAD79226226C800BEC554 /* GameViewController.swift in Sources */,
+				D84CAD71226226C800BEC554 /* AppDelegate.swift in Sources */,
+				D8266B3C22D0C1810064B075 /* GameManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84CAD83226226CA00BEC554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84CAD8C226226CA00BEC554 /* GalaxyModeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84CAD8E226226CA00BEC554 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84CAD97226226CA00BEC554 /* GalaxyModeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D84CAD89226226CA00BEC554 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D84CAD6C226226C800BEC554 /* GalaxyMode */;
+			targetProxy = D84CAD88226226CA00BEC554 /* PBXContainerItemProxy */;
+		};
+		D84CAD94226226CA00BEC554 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D84CAD6C226226C800BEC554 /* GalaxyMode */;
+			targetProxy = D84CAD93226226CA00BEC554 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D84CAD7A226226C800BEC554 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D84CAD7B226226C800BEC554 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D84CAD7F226226C900BEC554 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D84CAD80226226C900BEC554 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D84CAD99226226CA00BEC554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D84CAD9A226226CA00BEC554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D84CAD9C226226CA00BEC554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2GDGH968J;
+				INFOPLIST_FILE = GalaxyMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = home.GalaxyMode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D84CAD9D226226CA00BEC554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2GDGH968J;
+				INFOPLIST_FILE = GalaxyMode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = home.GalaxyMode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D84CAD9F226226CA00BEC554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2GDGH968J;
+				INFOPLIST_FILE = GalaxyModeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = home.GalaxyModeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GalaxyMode.app/GalaxyMode";
+			};
+			name = Debug;
+		};
+		D84CADA0226226CA00BEC554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2GDGH968J;
+				INFOPLIST_FILE = GalaxyModeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = home.GalaxyModeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GalaxyMode.app/GalaxyMode";
+			};
+			name = Release;
+		};
+		D84CADA2226226CA00BEC554 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2GDGH968J;
+				INFOPLIST_FILE = GalaxyModeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = home.GalaxyModeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GalaxyMode;
+			};
+			name = Debug;
+		};
+		D84CADA3226226CA00BEC554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2GDGH968J;
+				INFOPLIST_FILE = GalaxyModeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = home.GalaxyModeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GalaxyMode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D84CAD68226226C800BEC554 /* Build configuration list for PBXProject "GalaxyMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84CAD99226226CA00BEC554 /* Debug */,
+				D84CAD9A226226CA00BEC554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84CAD9B226226CA00BEC554 /* Build configuration list for PBXNativeTarget "GalaxyMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84CAD9C226226CA00BEC554 /* Debug */,
+				D84CAD9D226226CA00BEC554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84CAD9E226226CA00BEC554 /* Build configuration list for PBXNativeTarget "GalaxyModeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84CAD9F226226CA00BEC554 /* Debug */,
+				D84CADA0226226CA00BEC554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D84CADA1226226CA00BEC554 /* Build configuration list for PBXNativeTarget "GalaxyModeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D84CADA2226226CA00BEC554 /* Debug */,
+				D84CADA3226226CA00BEC554 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D84CAD65226226C800BEC554 /* Project object */;
+}
